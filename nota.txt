@@ -1,0 +1,39 @@
+Parte 1
+
+1) Criar um novo arquivo de teste, com extensão .cy.js dentro da pasta integration e utilizar o comando describe para descrever a suite de testes;
+2) Usar a função beforeEach e o comando cy.visit(), para indicar a URL que será carregada antes de cada novo caso de teste;
+3) Criar um novo caso de teste utilizando a função it e utilizar os recursos cy.get(), bem como as opção .type, .click e .should para fazer os assertions;
+4) Usar o Selector Playground do Cypress para identificar o nome do elemento;
+5) Usar as ferramentas de desenvolvedor para melhor identificar os elementos html da página.
+
+Parte 2
+
+1) Utilizar o comando cy.contains() para procurar por um texto dentro de um seletor, facilitando
+a busca por um elemento;
+2) Criar novos de teste, incluindo a função it(). Não há limites para a quantidade de testes incluídos
+
+parte 3
+
+1) Executar os testes em modo headless, sem abrir a interface gráfica do cypress;
+2) Verificar os relatórios e vídeos gerados ao executar testes em modo headless;
+3) Usar o pacote Mochawesome para personalizar a geração do relatório e ter a possibilidade de gerá-los
+como arquivos html, visualizando-os no  browser;
+4)  Utilizar o Dashboard para integrar os resultados dos testes e ter uma visão mais analítica e completa dos dados;
+5) Criar novos comandos personalizados, de acordo com a necessidade e referenciá-los como se fossem comandos nativos do Cypress, como por exemplo: cy.login(), cy.registrar() ou da forma que considerar melhor
+
+parte 4
+
+1) Utilizar dados de um arquivo externo nos casos de teste, fornecendo uma massa de dados;
+2) Utilizar a função require para obter dados de um módulo ou arquivo externo;
+3) Utilizar a função forEach para iterar sobre uma coleção de elementos e não precisar replicar código
+4) Fazer testes em API'S REST, verificando o status e corpo da resposta, bem como outros comportamentos;
+5) Usar o comando cy.request() e usar o .expect para fazer as asserções dos resultados esperados
+6) Cuidados ao testar dados sensíveis, para não expor o conteúdo a quem não poderia ter acesso
+7) Criar arquivo cypress.env.json para configurar variáveis de ambiente;
+8) usar o comando {log: false} na função que faz a digitação para omitir os dados que não podem ser mostrados
+
+Organizar os testes separando-os por funcionalidades afins, para melhorar a manutenção e legibilidade do código;
+Qual o conceito dos flaky tests e algumas maneira de evitá-los, como por exemplo:evitar eventos orientados a tempo, dependência de aplicações de terceiros, testes que podem ser quebrados por processamento concorrente;
+Boas práticas na escrita dos testes para melhorar performance e segurança;
+O conceito de mocks e stubs e a importância de usá-los;
+A importância em já pensar em boas práticas de escrita, organização e performance desde a concepção do projeto de testes.
